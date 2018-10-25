@@ -2,5 +2,6 @@
 	version : 1.0,
 	name : 'zh',
 	age : 25,
-	gender : "man"
+	gender : "man",
+	height : 170
 }
