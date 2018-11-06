@@ -98,25 +98,29 @@
 //     }
 // }(myMod));
 
-define(function () {
-    var cusModule = (function (mod) {
-        mod.init = function () {
-            
-        }
-        var _private = mod._private = mod._private || {}
-            _seal = mod._seal = mod._seal || function () {
-                delete mod._private;
-                delete mod._seal;
-                delete mod._unseal;
-            },
-            _unseal = mod._unseal = mod._unseal || function () {
-                mod._private = _private;
-                mod._seal = _seal;
-                mod._unseal = _unseal;
-            }
-            return mod;
-    }(cusModule || {}));
-})
+// var cusModule = (function (mod) {
+//     mod.init = function () {
+// 
+//     }
+//     var _private = mod._private = mod._private || {}
+//         _seal = mod._seal = mod._seal || function () {
+//             delete mod._private;
+//             delete mod._seal;
+//             delete mod._unseal;
+//         },
+//         _unseal = mod._unseal = mod._unseal || function () {
+//             mod._private = _private;
+//             mod._seal = _seal;
+//             mod._unseal = _unseal;
+//         }
+//         return mod;
+// }(cusModule || {}));
 
+(function () {
+    console.log('aaa');
+}());
+setTimeout(function () {
+    console.log('bbb');
+}, 0);
 
 
