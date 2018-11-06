@@ -100,6 +100,9 @@
 
 define(function () {
     var cusModule = (function (mod) {
+        mod.init = function () {
+            
+        }
         var _private = mod._private = mod._private || {}
             _seal = mod._seal = mod._seal || function () {
                 delete mod._private;
